@@ -34,6 +34,8 @@ set cc=80
 
 noremap <space> za
 
+let mapleader=","
+
 
 "highlight trailing whitespace
 highlight ExtraWhitespace ctermbg=red guibg=red
