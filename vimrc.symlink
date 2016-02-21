@@ -1,5 +1,7 @@
 " Make sure to install Vundle first:
 " $ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+" Also make sure your git editor is vim
+" $ git config --global core.editor $(which vim)
 
 " START: Vundle
 set nocompatible              " be iMproved, required
