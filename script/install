@@ -116,7 +116,7 @@ install_dotfiles () {
 link_bin () {
     info 'linking bin'
     dst="$HOME/bin"
-    link_file "./bin" "$dst"
+    link_file "$DOTFILES_ROOT/bin" "$dst"
 }
 
 install_dotfiles
