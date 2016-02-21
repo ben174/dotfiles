@@ -113,4 +113,11 @@ install_dotfiles () {
   done
 }
 
+link_bin () {
+    info 'linking bin'
+    dst="$HOME/bin"
+    link_file "./bin" "$dst"
+}
+
 install_dotfiles
+link_bin

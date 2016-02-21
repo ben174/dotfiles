@@ -1,3 +1,7 @@
+" Make sure to install Vundle first:
+"
+" $ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
 " START: Vundle
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -32,6 +36,7 @@ set scrolloff=5
 
 set pastetoggle=<F2>                                 " <F2> toggles paste mode
 
+syntax on
 
 " backup to ~/.tmp
 set backup
