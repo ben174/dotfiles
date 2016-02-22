@@ -4,13 +4,33 @@ if empty(glob("~/.vim/autoload/plug.vim"))
 endif
 
 call plug#begin()
+
+" A sensible baseline git config
 Plug 'tpope/vim-sensible'
+
+" Cool Git shortcuts
 Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-sensible'
+
+" Easily surround text, or change surrounding text
+Plug 'tpope/vim-surround'
+
+" Better javascript indenting
 Plug 'pangloss/vim-javascript'
+
+" Quickly, visually, jump around in a file
 Plug 'easymotion/vim-easymotion'
+
+" HTML Zen editing
+Plug 'mattn/emmet-vim'
+
+" Fuzzy file finder: fzf
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+
 call plug#end()
+
+let mapleader=","                                    " comma as leader key
+syntax on                                            " syntax highlighting
 
 " set smartindent
 set number                                           " show line numbers
@@ -26,7 +46,6 @@ set nowrap
 
 set pastetoggle=<F2>                                 " <F2> toggles paste mode
 
-syntax on
 
 " backup to ~/.tmp
 set backup
@@ -46,13 +65,12 @@ filetype plugin indent on
 filetype on
 
 " folding settings
-set foldmethod=indent                                "fold based on indent
-set foldnestmax=10                                   "deepest fold is 10 levels
-set nofoldenable                                     "dont fold by default
-set foldlevel=1                                      "this is just what i use
-set cc=80
+set foldmethod=indent                                " fold based on indent
+set foldnestmax=10                                   " deepest fold is 10 levels
+set nofoldenable                                     " don't fold by default
+set foldlevel=1                                      " this is just what i use
 
-let mapleader=","
+set cc=80                                            " draw a column at line 80
 
 
 " highlight trailing whitespace
@@ -65,3 +83,21 @@ autocmd BufWinLeave * call clearmatches()
 
 " delete trailing whitespace
 autocmd BufWritePre *.py,*.xml :%s/\s\+$//e
+
+"START: fzf stuff
+
+" Mapping selecting mappings
+nmap <leader><tab> <plug>(fzf-maps-n)
+xmap <leader><tab> <plug>(fzf-maps-x)
+omap <leader><tab> <plug>(fzf-maps-o)
+
+nmap <c-p> :Files<CR>
+nmap <c-l> :Lines<CR>
+
+" Insert mode completion
+imap <c-x><c-k> <plug>(fzf-complete-word)
+imap <c-x><c-f> <plug>(fzf-complete-path)
+imap <c-x><c-j> <plug>(fzf-complete-file-ag)
+imap <c-x><c-l> <plug>(fzf-complete-line)
+
+"END: fzf stuff
