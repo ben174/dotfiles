@@ -1,11 +1,12 @@
-# dotfiles
-Ben Friedland's dotfiles
+Ben Friedland's Dotfiles
+========================
+
 http://www.bugben.com
 
-# usage
-run install:
 
-    scripts/install
+A page full of things I'm currently trying to memorize...
+=========================================================
+
 
 This is my dotfiles repo, the README.md will always contain a page full
 of things I'm currently trying to memorize. Usually keybindings for a new
