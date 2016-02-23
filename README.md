@@ -5,7 +5,7 @@ http://www.bugben.com
 
 
 A page full of things I'm currently trying to memorize...
-=========================================================
+---------------------------------------------------------
 
 
 This is my dotfiles repo, the README.md will always contain a page full
