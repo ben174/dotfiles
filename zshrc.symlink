@@ -59,7 +59,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/Users/bfriedland/Projects/bemybb/venv/bin:/opt/homebrew/bin:/Users/bfriedland/.rvm/gems/ruby-1.9.3-p484/bin:/Users/bfriedland/.rvm/gems/ruby-1.9.3-p484@global/bin:/Users/bfriedland/.rvm/rubies/ruby-1.9.3-p484/bin:/Users/bfriedland/.rvm/bin:/usr/local/heroku/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/homebrew/bin:/Users/bfriedland/bin"
+export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/homebrew/bin:/Users/bfriedland/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 export EDITOR='vim'
@@ -78,7 +78,10 @@ export EDITOR='vim'
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 export LC_ALL="en_US.UTF-8"
+
+# go!
 export GOPATH="~/Projects/go"
+export PATH=$PATH:$GOPATH/bin
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
