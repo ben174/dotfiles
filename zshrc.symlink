@@ -78,6 +78,7 @@ export EDITOR='vim'
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 export LC_ALL="en_US.UTF-8"
+export GOPATH="~/Projects/go"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
