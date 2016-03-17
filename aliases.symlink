@@ -1,0 +1,2 @@
+alias gp="git pull"
+alias gca="git commit -av"
