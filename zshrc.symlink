@@ -52,7 +52,7 @@ AUTO_TITLE="false"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 #plugins=(git virtualenv django python battery brew fabric heroku tmux screen)
-plugins=(git virtualenv django python brew fabric heroku tmux )
+plugins=(git virtualenv django python brew fabric heroku tmux thefuck)
 #plugins=()
 
 source $ZSH/oh-my-zsh.sh

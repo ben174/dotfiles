@@ -61,6 +61,8 @@ set wildignore+=*.pyc                                " ignores python byte code
 set wildignore+=*/static_files/**                    " django static files
 
 autocmd FileType python setlocal expandtab shiftwidth=4 softtabstop=4
+autocmd FileType javascript setlocal expandtab shiftwidth=2 softtabstop=2
+autocmd FileType html setlocal expandtab shiftwidth=2 softtabstop=2
 filetype plugin indent on
 filetype on
 
@@ -70,7 +72,7 @@ set foldnestmax=10                                   " deepest fold is 10 levels
 set nofoldenable                                     " don't fold by default
 set foldlevel=1                                      " this is just what i use
 
-set cc=80                                            " draw a column at line 80
+set cc=120
 
 
 " highlight trailing whitespace
