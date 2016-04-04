@@ -1,2 +1,3 @@
 alias gp="git pull"
+alias gs="git status"
 alias gca="git commit -av"
