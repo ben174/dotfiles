@@ -97,6 +97,11 @@ broda'''.split('\n')
 
 bro = random.choice(brolist).strip()
 
-ps = subprocess.Popen(('echo', bro), stdout=subprocess.PIPE)
-output = subprocess.check_output(('pbcopy',), stdin=ps.stdout)
-ps.wait()
+echo_cmd = ('echo', bro)
+trim_cmd = ('tr', '-d', '\'\n\'',)
+copy_cmd = ('pbcopy',)
+echo_ps = subprocess.Popen(echo_cmd, stdout=subprocess.PIPE)
+trim_ps = subprocess.Popen(trim_cmd, stdin=echo_ps.stdout, stdout=subprocess.PIPE)
+copy_ps = subprocess.Popen(copy_cmd, stdin=trim_ps.stdout, stdout=subprocess.PIPE)
+
+result = copy_ps.stdout.read()
