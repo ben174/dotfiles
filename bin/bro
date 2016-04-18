@@ -1,0 +1,102 @@
+#!/usr/bin/env python
+
+'''
+Randomly chooses a pun for the word 'bro'
+and puts it in your clipboard. Useful when thanking
+someone but want some variety.
+
+Examples:
+   Cool, thanks much teddy brosevelt!
+   Awesome, thanks for making that change brotato chip.
+
+Made by Ben Friedland (www.bugben.com)
+'''
+
+import random
+import subprocess
+
+brolist = '''broski
+brosicle
+broseidon, god of the brocean
+brotato chip
+brotein shake
+brosef stalin
+brorack brobama
+teddy brosevelt
+don quibrote
+adrien brody
+gallilebro gallilei
+napoleon bronaparte
+brobo cop
+leonardo dicapribro
+broseph mengele
+bro nye the science guy
+selena bromez
+broey deschanel
+bro dimaggio
+wolfgang amadaeus brozart
+brohemian rhapsody
+osama bro laden
+mighty bro young
+brodo the hobbit bro
+broprah winfrey
+broby dick
+abroham lincoln
+bro han sebastian bach
+broticus maximus
+broham sandwich
+brojangles
+broaster oven
+franklin brosevelt
+brotato
+bromato
+broito
+akemi bromura
+brometal alchemist
+sherlock brolmes
+broccoli
+broberry
+brocaloid
+bro-footed broby
+bronado
+brottercup
+brotterfly
+bronana
+bro band
+rorobroa zoro
+amphabros
+bromo
+brotien shake
+brodeo
+brofessor
+han brolo
+bromosexual
+broranasaurs rex
+bromosapien
+brorontosaurs
+bro montana
+brochill
+brocean
+bromance
+broseph goebbels
+broba fett
+brotastic
+bromeio
+bro cena
+garden bro
+mlg bro
+eenie meenie miney bro
+vincent vaugh bro
+taekwonbro
+bro minaminbroto
+indiana brones
+kotaro brokuto
+broseta stone
+chewbrokka
+broda'''.split('\n')
+
+bro = random.choice(brolist).strip()
+
+ps = subprocess.Popen(('echo', bro), stdout=subprocess.PIPE)
+output = subprocess.check_output(('pbcopy',), stdin=ps.stdout)
+ps.wait()
