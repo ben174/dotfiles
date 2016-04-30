@@ -33,3 +33,11 @@ vim-emmet
 More BASH
 =========
     Use the first argument of the last command !$
+
+tmux
+====
+    ctrl-b o - cycle windows
+    ctrl-b z - zoom/unzoom window
+    ctrl-b { / } - move pane left/right
+    ctrl-b q - pane numbers
+    ctrl-b x - kill pane
