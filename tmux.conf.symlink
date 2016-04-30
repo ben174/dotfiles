@@ -3,3 +3,6 @@ bind r source-file ~/.tmux.conf
 
 # don't rename windows automatically
 set-option -g allow-rename off
+
+# use vim keybindings
+setw -g mode-keys vi
