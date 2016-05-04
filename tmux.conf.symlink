@@ -6,3 +6,14 @@ set-option -g allow-rename off
 
 # use vim keybindings
 setw -g mode-keys vi
+
+# first clone plugin manager:
+#   git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+# List of plugins
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin 'tmux-plugins/tmux-sensible'
+set -g @plugin 'Morantron/tmux-fingers'
+
+# Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
+run '~/.tmux/plugins/tpm/tpm'
