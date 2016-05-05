@@ -41,3 +41,11 @@ tmux
     ctrl-b { / } - move pane left/right
     ctrl-b q - pane numbers
     ctrl-b x - kill pane
+
+
+vim-easymotion
+================================
+    Jump to word forward
+    ,,w
+    Jump to word backward
+    ,,b
