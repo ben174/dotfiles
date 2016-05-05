@@ -1,4 +1,8 @@
 alias gp="git pull"
 alias gs="git status"
 alias gca="git commit -av"
+alias lr="ls -ltr"
+alias echovenv="echo $VIRTUAL_ENV"
+alias sv="source venv/bin/activate"
+alias edit-aliases="vim ~/.aliases && source ~/.aliases"
 alias cheatsheet="vim ~/dotfiles/README.md"
