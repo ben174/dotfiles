@@ -119,5 +119,13 @@ link_bin () {
     link_file "$DOTFILES_ROOT/bin" "$dst"
 }
 
+install_antigen() {
+    info 'installing antigen'
+    curl -L https://raw.githubusercontent.com/zsh-users/antigen/master/antigen.zsh > "$DOTFILES_ROOT/antigen.zsh"
+    # change shell to zsh
+    chsh -s /bin/zsh
+}
+
 install_dotfiles
 link_bin
+install_antigen
