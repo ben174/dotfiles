@@ -1,4 +1,6 @@
 alias gp="git pull"
+alias gpl="git pull"
+alias gph="git push"
 alias gs="git status"
 alias gca="git commit -av"
 alias lr="ls -ltr"
