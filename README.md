@@ -49,3 +49,7 @@ vim-easymotion
     ,,w
     Jump to word backward
     ,,b
+
+gtilt
+=====
+    cb to change word back instead of bcw
