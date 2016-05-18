@@ -8,3 +8,9 @@ alias echovenv="echo $VIRTUAL_ENV"
 alias sv="source venv/bin/activate"
 alias edit-aliases="vim ~/.aliases && source ~/.aliases"
 alias cheatsheet="vim ~/dotfiles/README.md"
+makepythondir() {
+    mkdir $1
+    touch $1/__init__.py
+}
+alias myname=myfunction
+alias mkpydir=makepythondir
