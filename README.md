@@ -53,3 +53,7 @@ vim-easymotion
 gtilt
 =====
     cb to change word back instead of bcw
+
+vim
+===
+    :W jump to tab by name
