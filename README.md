@@ -57,3 +57,7 @@ gtilt
 vim
 ===
     :W jump to tab by name
+    
+bash
+====
+    mkdir my-new-project && cd $_
