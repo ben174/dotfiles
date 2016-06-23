@@ -3,6 +3,9 @@ Ben Friedland's Dotfiles
 
 http://www.bugben.com
 
+NOTE: Start using Stow for all this when you get a chance: http://brandon.invergo.net/news/2012-05-26-using-gnu-stow-to-manage-your-dotfiles.html
+
+
 
 A page full of things I'm currently trying to memorize...
 ---------------------------------------------------------
@@ -57,3 +60,7 @@ gtilt
 vim
 ===
     :W jump to tab by name
+    
+bash
+====
+    mkdir my-new-project && cd $_
