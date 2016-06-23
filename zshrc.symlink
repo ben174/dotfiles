@@ -42,7 +42,6 @@ function try-source() {
 
 source ~/dotfiles/antigen.zsh
 
-antigen bundle robbyrussell/oh-my-zsh lib/
 
 HISTFILE=~/.histfile
 HISTSIZE=100000
@@ -81,6 +80,15 @@ antigen bundles <<EOBUNDLES
   zsh-users/zsh-syntax-highlighting
   jira
   jsontools
+  robbyrussell/oh-my-zsh lib/
+  zsh-users/zsh-syntax-highlighting
+  git
+  heroku
+  pip
+  thefuck
+  virtualenv
+  lein
+  command-not-found
 EOBUNDLES
 
 # activate theme
@@ -90,3 +98,4 @@ antigen theme https://gist.github.com/sethmcl/5567c8519760c8e7b5d2 agnoster
 bindkey -v
 
 antigen apply
+export PATH="/usr/local/sbin:$PATH"
