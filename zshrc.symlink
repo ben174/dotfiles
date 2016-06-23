@@ -91,6 +91,14 @@ antigen bundles <<EOBUNDLES
   command-not-found
 EOBUNDLES
 
+# Use ag instead of the default find command for listing candidates.
+# - The first argument to the function is the base path to start traversal
+# - Note that ag only lists files not directories
+# - See the source code (completion.{bash,zsh}) for the details.
+_fzf_compgen_path() {
+  ag -g "" "$1"
+}
+
 # activate theme
 antigen theme https://gist.github.com/sethmcl/5567c8519760c8e7b5d2 agnoster
 
