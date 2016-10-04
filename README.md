@@ -61,6 +61,33 @@ vim
 ===
     :W jump to tab by name
     
+vim python
+==========
+
+    [[          Jump to previous class or function (normal, visual, operator)
+    ]]          Jump to next class or function  (normal, visual, operator)
+    [M          Jump to previous class or method (normal, visual, operator)
+    ]M          Jump to next class or method (normal, visual, operator)
+    aC          Select a class. Ex: vaC, daC, yaC, caC (normal, operator)
+    iC          Select inner class. Ex: viC, diC, yiC, ciC (normal, operator)
+    aM          Select a function or method. Ex: vaM, daM, yaM, caM (normal, operator)
+    iM          Select inner func. or method. Ex: viM, diM, yiM, ciM (normal, operator)
+
+    ]t -- Jump to beginning of block
+    ]e -- Jump to end of block
+    ]v -- Select (Visual Line Mode) block
+    ]< -- Shift block to left
+    ]> -- Shift block to right
+    ]# -- Comment selection
+    ]u -- Uncomment selection
+    ]c -- Select current/previous class
+    ]d -- Select current/previous function
+    ]<up> -- Jump to previous line with the same/lower indentation
+    ]<down> -- Jump to next line with the same/lower indentation
+
+
 bash
 ====
     mkdir my-new-project && cd $_
+
+
