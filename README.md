@@ -60,6 +60,7 @@ gtilt
 vim
 ===
     :W jump to tab by name
+    Copy to OSX clipboard, visual select, then :w !pbcopy
     
 vim python
 ==========
