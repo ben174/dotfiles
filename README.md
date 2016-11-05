@@ -61,6 +61,7 @@ vim
 ===
     :W jump to tab by name
     Copy to OSX clipboard, visual select, then :w !pbcopy
+    Recall a previous command in command mode, q:  .. use vim navigation to edit the command
     
 vim python
 ==========
@@ -90,5 +91,3 @@ vim python
 bash
 ====
     mkdir my-new-project && cd $_
-
-
