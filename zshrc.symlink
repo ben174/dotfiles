@@ -27,6 +27,9 @@ source /usr/local/bin/virtualenvwrapper.sh
 # fzf!
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# fzf should respect .gitignore
+export FZF_DEFAULT_COMMAND='ag -g ""'
+
 # any additional machine-specific zshrc
 source ~/.zshrc-local
 
@@ -76,20 +79,27 @@ fi
 
 # antigen bundles (https://github.com/zsh-users/antigen)
 antigen bundles <<EOBUNDLES
-  fasd
-  zsh-users/zsh-syntax-highlighting
-  jira
-  jsontools
   robbyrussell/oh-my-zsh lib/
-  zsh-users/zsh-syntax-highlighting
   git
-  heroku
   pip
   thefuck
   virtualenv
-  lein
-  command-not-found
+  kennethreitz/autoenv
 EOBUNDLES
+
+
+# for fasd
+#
+
+alias a='fasd -a'        # any
+alias s='fasd -si'       # show / search / select
+alias d='fasd -d'        # directory
+alias f='fasd -f'        # file
+alias sd='fasd -sid'     # interactive directory selection
+alias sf='fasd -sif'     # interactive file selection
+alias z='fasd_cd -d'     # cd, same functionality as j in autojump
+alias zz='fasd_cd -d -i' # cd with interactive selection
+
 
 # Use ag instead of the default find command for listing candidates.
 # - The first argument to the function is the base path to start traversal

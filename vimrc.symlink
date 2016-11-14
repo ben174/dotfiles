@@ -27,6 +27,9 @@ Plug 'mattn/emmet-vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
+" Syntastic syntax checker
+Plug 'vim-syntastic/syntastic'
+
 call plug#end()
 
 let mapleader=","                                    " comma as leader key
