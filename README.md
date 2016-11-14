@@ -91,3 +91,8 @@ vim python
 bash
 ====
     mkdir my-new-project && cd $_
+
+ES6
+=== 
+     let age = query && query.showAge ? '33' : ''
+
