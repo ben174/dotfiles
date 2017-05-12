@@ -17,6 +17,9 @@ Plug 'tpope/vim-surround'
 " Better javascript indenting
 Plug 'pangloss/vim-javascript'
 
+" Flake8 (PEP8) for Python
+Plug 'nvie/vim-flake8'
+
 " Quickly, visually, jump around in a file
 Plug 'easymotion/vim-easymotion'
 

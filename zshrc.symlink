@@ -87,6 +87,7 @@ antigen bundles <<EOBUNDLES
   kennethreitz/autoenv
 EOBUNDLES
 
+plugins=(fasd)
 
 # for fasd
 #
