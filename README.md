@@ -5,6 +5,23 @@ http://www.bugben.com
 
 NOTE: Start using Stow for all this when you get a chance: http://brandon.invergo.net/news/2012-05-26-using-gnu-stow-to-manage-your-dotfiles.html
 
+Install Brew
+------------
+google install brew
+
+Clone this repo
+---------------
+
+Install OS level stuff stuff:
+-------------------
+
+    brew install tmux vim zsh fzf the_silver_searcher git python python3 
+
+    mkdir -p ~/.vim/autoload
+
+    curl -L git.io/antigen > ~/dotfiles/bin/antigen.zsh
+    
+    pip3 install thefuck
 
 
 A page full of things I'm currently trying to memorize...
