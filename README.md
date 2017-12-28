@@ -7,6 +7,7 @@ NOTE: Start using Stow for all this when you get a chance: http://brandon.inverg
 
 Install Brew
 ------------
+
 google install brew
 
 Clone this repo
@@ -15,13 +16,28 @@ Clone this repo
 Install OS level stuff stuff:
 -------------------
 
-    brew install tmux vim zsh fzf the_silver_searcher git python python3 
+    brew install tmux vim zsh fzf the_silver_searcher git python python3 tree postgresql node
 
     mkdir -p ~/.vim/autoload
 
     curl -L git.io/antigen > ~/dotfiles/bin/antigen.zsh
-    
+
     pip3 install thefuck
+
+
+Run the script
+--------------
+     ~/dotfiles/script/install
+
+Vi mode is awesome
+------------------
+
+    set -o vi
+
+Git shit
+--------
+    git config --global user.name "Ben Friedland"
+    git config --global user.email ben174@gmail.com
 
 
 A page full of things I'm currently trying to memorize...

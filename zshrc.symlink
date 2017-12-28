@@ -118,3 +118,6 @@ bindkey -v
 
 antigen apply
 export PATH="/usr/local/sbin:$PATH"
+
+# vi mode is tits
+set -o vi
