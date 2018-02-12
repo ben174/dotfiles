@@ -6,7 +6,7 @@ AUTO_TITLE="false"
 
 #plugins=(git virtualenv django python brew fabric heroku tmux thefuck)
 
-export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/homebrew/bin:/Users/bfriedland/bin"
+export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/homebrew/bin:/Users/bfriedland/bin:/Users/bfriedland/Library/Python/3.6/bin"
 
 export EDITOR='vim'
 
