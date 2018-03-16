@@ -27,6 +27,7 @@ Install OS level stuff stuff:
 
 Run the script
 --------------
+
      ~/dotfiles/script/install
 
 Vi mode is awesome
@@ -36,9 +37,16 @@ Vi mode is awesome
 
 Git shit
 --------
+
     git config --global user.name "Ben Friedland"
     git config --global user.email ben174@gmail.com
 
+
+ESLint
+------
+
+    sudo npm install -g eslint
+    sudo npm install -g eslint-plugin-react
 
 A page full of things I'm currently trying to memorize...
 ---------------------------------------------------------
