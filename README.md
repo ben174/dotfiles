@@ -8,10 +8,12 @@ NOTE: Start using Stow for all this when you get a chance: http://brandon.inverg
 Install Brew
 ------------
 
-google install brew
+    google install brew
 
 Clone this repo
 ---------------
+  
+    cd ~ && git clone https://github.com/ben174/dotfiles.git
 
 Install OS level stuff stuff:
 -------------------
@@ -19,10 +21,12 @@ Install OS level stuff stuff:
     brew install tmux vim zsh fzf the_silver_searcher git python python3 tree postgresql node
 
     mkdir -p ~/.vim/autoload
+    
+    touch ~/.zshrc-local
 
     curl -L git.io/antigen > ~/dotfiles/bin/antigen.zsh
 
-    pip3 install thefuck
+    pip3 install thefuck flake8
 
 
 Run the script
