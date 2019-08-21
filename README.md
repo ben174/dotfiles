@@ -8,7 +8,7 @@ NOTE: Start using Stow for all this when you get a chance: http://brandon.inverg
 Install Brew
 ------------
 
-    google install brew
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 Clone this repo
 ---------------
@@ -25,9 +25,9 @@ Install OS level stuff stuff:
     touch ~/.zshrc-local
 
     curl -L git.io/antigen > ~/dotfiles/bin/antigen.zsh
-
-    pip3 install thefuck flake8
-
+    
+    pip3 install thefuck flake8
+    
 
 Run the script
 --------------
