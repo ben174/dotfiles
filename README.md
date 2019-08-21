@@ -58,6 +58,10 @@ This is my dotfiles repo, the README.md will always contain a page full
 of things I'm currently trying to memorize. Usually keybindings for a new
 VIM plugin, or some hot new syntax in my favorite new programming language.
 
+Delete until word:
+------------------
+    d/<word>
+
 
 Wrap lines in VIM:
 ------------------
