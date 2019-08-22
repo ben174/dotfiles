@@ -61,6 +61,10 @@ VIM plugin, or some hot new syntax in my favorite new programming language.
 Delete until word:
 ------------------
     d/<word>
+    
+Latest VIM:
+-----------
+    <shift>] - next blank line
 
 
 Wrap lines in VIM:
