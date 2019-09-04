@@ -18,7 +18,8 @@ Clone this repo
 Install OS level stuff stuff:
 -------------------
 
-    brew install tmux vim zsh fzf the_silver_searcher git python python3 tree postgresql node
+    # todo: use a brewfile for this
+    brew install tmux vim zsh fzf the_silver_searcher git python python3 tree postgresql node ctags
 
     mkdir -p ~/.vim/autoload
     
