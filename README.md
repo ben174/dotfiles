@@ -8,25 +8,31 @@ NOTE: Start using Stow for all this when you get a chance: http://brandon.inverg
 Install Brew
 ------------
 
-google install brew
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 Clone this repo
 ---------------
+  
+    cd ~ && git clone https://github.com/ben174/dotfiles.git
 
 Install OS level stuff stuff:
 -------------------
 
-    brew install tmux vim zsh fzf the_silver_searcher git python python3 tree postgresql node
+    # todo: use a brewfile for this
+    brew install tmux vim zsh fzf the_silver_searcher git python python3 tree postgresql node ctags
 
     mkdir -p ~/.vim/autoload
+    
+    touch ~/.zshrc-local
 
     curl -L git.io/antigen > ~/dotfiles/bin/antigen.zsh
-
-    pip3 install thefuck
-
+    
+    pip3 install thefuck flake8
+    
 
 Run the script
 --------------
+
      ~/dotfiles/script/install
 
 Vi mode is awesome
@@ -36,15 +42,30 @@ Vi mode is awesome
 
 Git shit
 --------
+
     git config --global user.name "Ben Friedland"
     git config --global user.email ben174@gmail.com
 
+
+ESLint
+------
+
+    sudo npm install -g eslint
+    sudo npm install -g eslint-plugin-react
 
 A page full of things I'm currently trying to memorize...
 ---------------------------------------------------------
 This is my dotfiles repo, the README.md will always contain a page full
 of things I'm currently trying to memorize. Usually keybindings for a new
 VIM plugin, or some hot new syntax in my favorite new programming language.
+
+Delete until word:
+------------------
+    d/<word>
+    
+Latest VIM:
+-----------
+    <shift>] - next blank line
 
 
 Wrap lines in VIM:

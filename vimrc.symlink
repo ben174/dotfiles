@@ -30,13 +30,40 @@ Plug 'mattn/emmet-vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
-" Syntastic syntax checker
-Plug 'vim-syntastic/syntastic'
+" Async syntax checker (better than syntastic)
+Plug 'w0rp/ale'
+
+" JSX stuff
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+
+" Allows for async running of tasks (reformatting on saving)
+Plug 'skywind3000/asyncrun.vim'
 
 call plug#end()
 
 let mapleader=","                                    " comma as leader key
 syntax on                                            " syntax highlighting
+
+
+" suppposedly makes vim emmit work but it doesnt
+let g:user_emmet_leader_key='<Tab>'
+let g:user_emmet_settings = {
+  \  'javascript.jsx' : {
+    \      'extends' : 'jsx',
+    \  },
+  \}
+
+
+" ale settings
+let g:ale_sign_error = '●' " Less aggressive than the default '>>'
+let g:ale_sign_warning = '.'
+let g:ale_lint_on_enter = 0 " Less distracting when opening a new file
+
+
+" auto format js files on save
+autocmd BufWritePost *.js AsyncRun -post=checktime ./node_modules/.bin/eslint --fix %
+
 
 " set smartindent
 set number                                           " show line numbers
