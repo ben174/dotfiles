@@ -84,7 +84,6 @@ antigen bundles <<EOBUNDLES
   pip
   thefuck
   virtualenv
-  kennethreitz/autoenv
 EOBUNDLES
 
 plugins=(fasd)
